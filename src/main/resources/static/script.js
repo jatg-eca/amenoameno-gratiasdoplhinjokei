@@ -317,7 +317,7 @@ function setLocalStore(url) {
     fetch(url)
     .then(response => {return response.json()})
     .then(users => {
-        let info = users.data
+        let info = users
 
             info.forEach(element => {
                 localStorage.setItem("Card" + element.id, JSON.stringify (
