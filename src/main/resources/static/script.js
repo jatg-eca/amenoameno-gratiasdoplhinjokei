@@ -10,7 +10,8 @@
  */
 
 //Esta variable conecta con la API a la primera página, que tiene delay
-const fetchUno = "https://reqres.in/api/users?delay=3";
+//const fetchUno = "https://reqres.in/api/users?delay=3";
+const fetchUno = "https://amenoameno-gratiasdoplhinjokei.herokuapp.com/api/customers";
 //Esta variable conecta con la API a la segunda página
 const fetchDos = 'https://reqres.in/api/users?page=2';
 //Esta variable identifica que existan o no datos de expiración de localStorage
