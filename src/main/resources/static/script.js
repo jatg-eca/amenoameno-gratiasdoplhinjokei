@@ -52,8 +52,8 @@ function fetchInfo(url) {
         node.classList.add("card", "m-2", "card-hover", ":hover");
         col.classList.add("col-sm-4", "d-flex", "justify-content-center");
         node.setAttribute("style", "width: 9rem;")
-    //    const info = document.createTextNode(`Info: ID --${user.id}-- NAME --${user.first_name} ${user.last_name}-- CONTACT --${user.email}-- ${user.avatar}`);
-        text.innerHTML= `<b>Id#:</b> ${user.id} <br> <b>Name:</b> ${user.first_name} ${user.last_name} <br> <b>Contact:</b> <a href="mailto:${user.email}?Subject=Abue%20hackerman%20page%20inquiry">${user.email}</a>`;
+    //    const info = document.createTextNode(`Info: ID --${user.id}-- NAME --${user.firstName} ${user.lastName}-- CONTACT --${user.email}-- ${user.avatar}`);
+        text.innerHTML= `<b>Id#:</b> ${user.id} <br> <b>Name:</b> ${user.firstName} ${user.lastName} <br> <b>Contact:</b> <a href="mailto:${user.email}?Subject=Abue%20hackerman%20page%20inquiry">${user.email}</a>`;
         card.appendChild(text);
         node.appendChild(img);
         node.appendChild(card);
@@ -297,7 +297,7 @@ function pasteHTML(name) {
     node.classList.add("card", "m-2", "card-hover", ":hover");
     col.classList.add("col-sm-4", "d-flex", "justify-content-center");
     node.setAttribute("style", "width: 9rem;")
-//    const info = document.createTextNode(`Info: ID --${user.id}-- NAME --${user.first_name} ${user.last_name}-- CONTACT --${user.email}-- ${user.avatar}`);
+//    const info = document.createTextNode(`Info: ID --${user.id}-- NAME --${user.firstName} ${user.lastName}-- CONTACT --${user.email}-- ${user.avatar}`);
     text.innerHTML= `<b>Id#:</b> ${name.id} <br> <b>Name:</b> ${name.name} <br> <b>Contact:</b> <a href="mailto:${name.contact}?Subject=Abue%20hackerman%20page%20inquiry">${name.contact}</a>`;
     card.appendChild(text);
     node.appendChild(img);
