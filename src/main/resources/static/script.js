@@ -38,7 +38,7 @@ function fetchInfo(url) {
     fetch(url) 
         .then(responseJSON => {return responseJSON.json()})
         .then(usuarios => {
-            for (user of usuarios.data) {
+            for (user of usuarios) {
   
         const col = document.createElement("div");
         const node = document.createElement("div");
