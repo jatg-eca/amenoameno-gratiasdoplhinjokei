@@ -323,7 +323,7 @@ function setLocalStore(url) {
                 localStorage.setItem("Card" + element.id, JSON.stringify (
                     {
                         id: element.id,
-                        name: `${element.first_name} ${element.last_name}`,
+                        name: `${element.firstName} ${element.lastName}`,
                         contact: element.email,
                         avatar: element.avatar,
         
