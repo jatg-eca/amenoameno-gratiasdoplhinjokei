@@ -5,7 +5,9 @@ import java.util.List;
 import org.generation.app.entity.Role;
 import org.generation.app.repository.IRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RoleServiceImp implements IRoleService {
 	@Autowired
 	IRoleRepository roleRepository;
