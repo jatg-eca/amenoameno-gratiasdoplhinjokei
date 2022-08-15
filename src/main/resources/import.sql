@@ -24,6 +24,8 @@ INSERT INTO customer_data (first_name, last_name) VALUES('Federico', 'Bardón');
 INSERT INTO customer_data (first_name, last_name) VALUES('Walter', 'White');
 INSERT INTO customer_data (first_name, last_name) VALUES('Emmett', 'Brown');
 
+INSERT INTO customer_data (first_name, last_name) VALUES('Pedro', 'Navajas');
+
 
 INSERT INTO `product` (`description`, `price`) VALUES ('Guitarra ameno', '1500');
 INSERT INTO `product` (`description`, `price`) VALUES ('Cibersecurity for dummies', '500');
