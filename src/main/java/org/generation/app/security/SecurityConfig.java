@@ -40,16 +40,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //				.antMatchers(HttpMethod.DELETE, "/api/**").hasAnyRole("ADMIN")
 //				.antMatchers(HttpMethod.GET, "/api/**").hasAnyRole("ADMIN", "SAIYAJIN", "USER")
 //				.antMatchers("/dashboard/**").hasRole("ADMIN")
-				.antMatchers("/**").permitAll()
+//				.antMatchers("/**").permitAll()
 				.anyRequest().authenticated()
 				
 				.and().formLogin().permitAll()
 
 				//Las peticiones para login pasan por este filtro 
 				.and().addFilterBefore(new LoginFilter("/login", authenticationManager()),
-						UsernamePasswordAuthenticationFilter.class);
+						UsernamePasswordAuthenticationFilter.class)
 				//El filtro valora si las peticiones http sólo si el token es correcto
-				//.addFilterBefore(null, null);
+				.addFilterBefore(new JwtFilter(), UsernamePasswordAuthenticationFilter.class);
 				
 			
 		}
